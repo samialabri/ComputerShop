@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="main.css">
 <?php
 
 require("header.php");

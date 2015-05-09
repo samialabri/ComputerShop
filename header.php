@@ -3,7 +3,7 @@
 
 <?php
 
-$connect = mysql_connect("localhost","root");
+$connect = mysql_connect("localhost","root","sa131521mi");
 
 if($connect) {
 

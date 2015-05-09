@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="main.css">
 <?php
 
 require("header.php");
@@ -53,18 +54,20 @@ if (isset($_POST['login'])) {
 
     $username = $_POST['Username'];
     $password = $_POST['Password'];
-    $hash = password_hash($password,PASSWORD_BCRYPT);
 
-    echo $hash;
+
+
 
     $sqlcheck = "SELECT F_NAME, L_NAME, USERNAME ,PASSWORD FROM customer WHERE USERNAME = '$username';";
+
 
 
 
     $result = mysql_query($sqlcheck);
     $row = mysql_fetch_row($result);
 
-    if(!isset($raw)){
+
+    if(!isset($row)){
 
         echo "you are not registered";
 
@@ -75,7 +78,7 @@ if (isset($_POST['login'])) {
         if(password_verify( $password,$row[3])){
 
 
-            echo "<br>Welcome [$raw[0]]] to the website...";
+            echo "<br>Welcome $row[0] to the website...";
 
 
 
