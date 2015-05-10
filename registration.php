@@ -1,5 +1,4 @@
-
-<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="/css/custom.css">
 <?php require 'header.php'; ?>
 
 
@@ -77,8 +76,6 @@
 
 </form>
 
-
-
 <?php
 if (isset($_POST['Submit'])){
 
@@ -110,9 +107,4 @@ if (isset($_POST['Submit'])){
     }
 
 }
-
-
-
-
-
 ?>

@@ -6,10 +6,6 @@ require("header.php");
 
 ?>
 
-
-
-
-
 <form name="login" action="login.php" method="POST">
 
 
@@ -43,8 +39,6 @@ require("header.php");
 
 
 </form>
-
-
 
 <?php
 
@@ -95,7 +89,5 @@ if (isset($_POST['login'])) {
 
 
 }
-
-
 
 ?>

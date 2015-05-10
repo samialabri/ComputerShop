@@ -1,6 +1,3 @@
-
-
-
 <?php
 
 $connect = mysql_connect("localhost","root","sa131521mi");

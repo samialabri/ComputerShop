@@ -3,17 +3,11 @@
 
 require("header.php");
 
-
 $result = mysql_query("SELECT * FROM product;");
 
 $num = mysql_num_rows($result);
 
-
-
-
 ?>
-
-
 
     <table border ="1">
 
@@ -46,13 +40,3 @@ $num = mysql_num_rows($result);
 
         </tbody>
         </table>
-
-
-
-
-
-
-        </tbody>
-
-
-    </table>

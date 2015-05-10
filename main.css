@@ -68,7 +68,6 @@ img {
     }
 }
 
-
 input[type = "text"] {
 
     width: 150px;
@@ -76,7 +75,6 @@ input[type = "text"] {
     background-color: #ff00e2;
 
 }
-
 
 input[type="submit"] {
     width: 120px;
