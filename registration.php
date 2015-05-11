@@ -1,7 +1,16 @@
-<link rel="stylesheet" href="/css/custom.css">
+<html>
+<head>
+    <link rel="stylesheet" href="custom.css">
+    <title>Computer-Shop</title>
+</head>
 <?php require 'header.php'; ?>
 
 
+
+
+
+
+<div id="main">
 <form name = "registration" action="registration.php" method="POST" >
 
     <table border="1">
@@ -75,7 +84,7 @@
     <input type="submit" value="Submit" name="Submit" />
 
 </form>
-
+</div>
 <?php
 if (isset($_POST['Submit'])){
 
@@ -108,3 +117,7 @@ if (isset($_POST['Submit'])){
 
 }
 ?>
+
+
+
+</html>

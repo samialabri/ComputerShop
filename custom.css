@@ -1,0 +1,62 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Corben', Georgia, Times, serif;
+}
+p, div {
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+}
+body {
+    background-color: lightblue;
+}
+
+
+
+
+
+
+
+
+
+
+div#main{
+
+    border: solid 1px #006dcc;
+    margin-left: 75px;
+    margin-right: 75px;
+    height: 800px;
+    background-color: #006dcc;
+    border-radius: 10px;
+ }
+
+div#header{
+
+    
+
+
+}
+
+
+div#footer{
+
+
+
+
+}
+
+table {
+
+    border: transparent;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+input[type=submit]{
+    
+    font-size: 100%;
+    background-color: #356635;
+    padding:5px;
+    border:2px ;
+    border-radius: 5px;
+    margin-left: 10px;
+
+}

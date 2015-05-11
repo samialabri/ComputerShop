@@ -1,4 +1,5 @@
 
+
 <?php
 
 require("header.php");
@@ -21,10 +22,23 @@ $num4 = mysql_num_rows($result4);
 $num5 = mysql_num_rows($result5);
 
 ?>
+<html>
+<head>
+<link rel="stylesheet" href="custom.css">
+<title>Computer-Shop</title>
+</head>
+
+<div id="header">
+
+    <h1 align="center">Welcome to the Computer Shop</h1>
+
+</div>
 
 
 
-<table border ="1">
+<div id="main">
+
+    <table border ="1">
 
     <thead>
     <tr>
@@ -58,7 +72,7 @@ $num5 = mysql_num_rows($result5);
 
 </table>
 
-<table border ="1">
+    <table border ="1">
 
     <thead>
     <tr>
@@ -92,7 +106,7 @@ $num5 = mysql_num_rows($result5);
 
 </table>
 
-<table border ="1">
+    <table border ="1">
 
     <thead>
     <tr>
@@ -126,7 +140,7 @@ $num5 = mysql_num_rows($result5);
 
 </table>
 
-<table border ="1">
+    <table border ="1">
 
     <thead>
     <tr>
@@ -160,7 +174,7 @@ $num5 = mysql_num_rows($result5);
 
 </table>
 
-<table border ="1">
+    <table border ="1">
 
     <thead>
     <tr>
@@ -194,7 +208,7 @@ $num5 = mysql_num_rows($result5);
 
 </table>
 
-<table border ="1">
+    <table border ="1">
 
     <thead>
     <tr>
@@ -229,3 +243,17 @@ $num5 = mysql_num_rows($result5);
 </table>
 
 
+
+
+</div>
+
+<div id = "footer">
+
+    <a href="index.php">Home</a>
+    <a href="login.php">Login</a>
+    <a href="registration.php">Register</a>
+
+</div>
+
+
+</html>

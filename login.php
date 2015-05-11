@@ -1,12 +1,16 @@
-<link rel="stylesheet" href="main.css">
+<html>
+<head>
+    <link rel="stylesheet" href="custom.css">
+    <title>Computer-Shop</title>
+</head>
 <?php
 
 require("header.php");
 
 
 ?>
-
-<form name="login" action="login.php" method="POST">
+<div id="main">
+<form name="login" action="index.php" method="POST">
 
 
 
@@ -39,7 +43,7 @@ require("header.php");
 
 
 </form>
-
+</div>
 <?php
 
 
