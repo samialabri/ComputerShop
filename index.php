@@ -60,7 +60,14 @@ $num5 = mysql_num_rows($result5);
 
         echo "<tr>";
         echo "<td>" .$row[0]."</td>";
-        echo "<td>" .$row[1]."</a></td>";
+        echo "<td>" .$row[1]."</td>";
+        echo "<td>" .$row[2]."</td>";
+        echo "<td>" .$row[3]."</td>";
+        echo "<td>" .$row[4]."</td>";
+        echo "<td>" .$row[6]."</td>";
+        echo "<td>" .$row[7]."</td>";
+        echo "<td>" .$row[8]."</td>";
+        echo "<td><a href='order.php'>add to cart</a></td>";
         echo "</tr>";
 
 
