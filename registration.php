@@ -99,7 +99,7 @@ if (isset($_POST['Submit'])){
 
     $hash = password_hash($password,PASSWORD_BCRYPT);
 
-    $sqlinsert = "INSERT INTO customer (CUS_ID,F_NAME,L_NAME,PHONE_NUM,E_MAIL,ADDRESS,USERNAME,PASSWORD) VALUES ('3','$fname','$lname','$phone','$email','$address','$username','$hash');";
+    $sqlinsert = "INSERT INTO user (user_name,password,fName,lName,phone,email,userType) VALUES ('$username','$hash','$fname','$lname','$phone','$email',2);";
 
     echo $sqlinsert;
 
@@ -116,6 +116,9 @@ if (isset($_POST['Submit'])){
     }
 
 }
+
+    require "footer.php";
+
 ?>
 
 

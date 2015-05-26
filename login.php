@@ -10,7 +10,7 @@ require("header.php");
 
 ?>
 <div id="main">
-<form name="login" action="index.php" method="POST">
+<form name="login" action="login.php" method="POST">
 
 
 
@@ -56,7 +56,7 @@ if (isset($_POST['login'])) {
 
 
 
-    $sqlcheck = "SELECT F_NAME, L_NAME, USERNAME ,PASSWORD FROM customer WHERE USERNAME = '$username';";
+    $sqlcheck = "SELECT USER_ID,user_name, password ,fName, lName,userType FROM user WHERE user_name = '$username';";
 
 
 
@@ -73,11 +73,12 @@ if (isset($_POST['login'])) {
 
     else {
 
-        if(password_verify( $password,$row[3])){
+        if(password_verify( $password,$row[2])){
 
 
-            echo "<br>Welcome $row[0] to the website...";
-
+            echo "<br>Welcome $row[3] to the website...";
+            $_SESSION['login']=$row[0];
+            $_SESSION['type']=$row[5];
 
 
         }else
@@ -94,4 +95,5 @@ if (isset($_POST['login'])) {
 
 }
 
+require "footer.php";
 ?>
